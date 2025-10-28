@@ -1,0 +1,191 @@
+:root {
+  /* Colors */
+  --color-primary: #1d4d72;
+  --color-secondary: #333333;
+  --color-accent: #f2f60f;
+  --color-bg: #f5f7fb;
+  --color-text: #1f2937;
+  --color-border: #e5e7eb;
+  --color-divider: #d3d3d3;
+
+  /* Typography */
+  --font-family-base: "Nunito", sans-serif;
+
+  /* Layout & Effects */
+  --radius: 12px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+}
+
+/* Header */
+#course-title {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+h1 {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--color-secondary);
+  margin: 0 auto;
+  font-family: var(--font-family-base);
+  font-size: 1.2rem;
+}
+
+nav a {
+  display: block;
+  color: var(--color-bg);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  nav {
+    display: flex;
+  }
+  nav a {
+    flex: 1 0 auto;
+  }
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+@media (min-width: 860px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+  }
+}
+
+/* Cards */
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+}
+
+.card h2 {
+  margin: 0;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-align: center;
+  padding: 0.85rem 1rem;
+  font: 600 1.25rem var(--font-family-base);
+  border-bottom: 1px solid rgb(0 0 0 / 15%);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card > *:not(h2) {
+  padding: 1rem 1.25rem;
+}
+
+.card p {
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.card img {
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+}
+
+/* Card Layout */
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-text h3 {
+  margin: 1rem 0 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.card-content-wrap {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Card Lists */
+.card ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+  gap: 0.75rem;
+}
+
+.card ul a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card ul a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Carlos Andres Fajardo Pedraza">
+  <meta name="author" content="Carlos Andres Fajardo Pedraza">
+
+  <title>WDD 131 – Dynamic Web Fundamentals – Carlos Fajardo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    <h1>WDD 131 - cafajardop</h1>
+
+  <header>
+    <h1>
+      WDD 131 – Dynamic Web Fundamentals -
+      <span id="course-title">Carlos Fajardo</span>
+    </h1>
+    <nav>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a>
+      <a href="#" aria-disabled="true">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section class="card">
+      <h2>About Me</h2>
+
+      <div class="card-content">
+        <div class="card-text">
+          <p>
+            WDD 131 focuses on the fundamentals of dynamic web development, including HTML, CSS, JavaScript, and
+            server-side programming. Throughout this course, I will be building various projects that demonstrate my
+            understanding of these concepts.
+          </p>
+
+          <h3>Bogotá, Colombia</h3>
+
+          <div class="card-content-wrap">
+            <figure>
+              <img src="images/colombia.jpg" alt="Flag of Colombia" width="200" height="150" loading="lazy">
+              <figcaption>Official flag of Colombia</figcaption>
+            </figure>
+
+            <p>
+              I live in <strong>Colombia</strong>. I enjoy frontend development, and this site will showcase my HTML, CSS,
+              and JavaScript practice throughout the course.
+            </p>
+          </div>
+        </div>
+
+        <figure>
+          <img src="images/profile.jpg" alt="Portrait of Carlos Andres Fajardo Pedraza" width="200" height="240"
+            loading="lazy">
+          <figcaption>Carlos Andres Fajardo Pedraza</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Carlos Andres Fajardo Pedraza • Colombia</p>
+    <p>Last Updated: <span id="lastmodified"></span></p>
+  </footer>
+
+  <script src="scripts/getdates.js"></script>
 </body>
+
 </html>
