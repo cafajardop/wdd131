@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <meta name="author" content="Carlos Fajardo" />
+  <meta name="description"
+    content="Temple Album showcases a collection of temples from around the world, highlighting their architectural and spiritual beauty through a clean, responsive gallery layout.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
   <script src="scripts/temples.js" defer></script>
+  <title>Temple Album</title>
 </head>
 
 <body>
   <header class="site-header">
     <h1 class="logo">Temple Album</h1>
 
-    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">☰</button>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav"
+      aria-label="Abrir menú">☰</button>
 
     <nav id="siteNav" class="nav visible">
       <button class="menu-close" aria-label="Cerrar menú">✕</button>
@@ -30,30 +41,24 @@
   <main>
     <h2>Home</h2>
     <section class="gallery">
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
-      <div class="card">
-        <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
-        <p>San Diego California</p>
-      </div>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure class="card"> <img src="/wdd131/images/temple.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
     </section>
   </main>
 
@@ -62,4 +67,5 @@
     <p id="lastModified"></p>
   </footer>
 </body>
+
 </html>
