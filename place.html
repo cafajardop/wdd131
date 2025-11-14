@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metatags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Carlos Andres Fajardo Pedraza">
+    <meta name="author" content="Carlos Andres Fajardo Pedraza">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- Scripts -->
+    <script src="scripts/place.js" defer></script>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Carlos Fajardo</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="title">Madagascar</h1>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <section class="hero">
+                <picture>
+                    <source srcset="images/large.webp" media="(min-width: 700px)" type="image/webp">
+
+                    <source srcset="images/small.webp" type="image/webp">
+
+                    <img src="images/small.webp" alt="Scenery of the chosen place">
+                </picture>
+            </section>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <ul>
+                <li><span class="label">Area:</span> <span class="value">587,041 km²</span></li>
+                <li><span class="label">Population:</span> <span class="value">27,691,018</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Antananarivo</span></li>
+                <li><span class="label">Languages:</span> <span class="value">Malagasy, French</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Malagasy Ariary</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC+3</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+261</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.mg</span></li>
+
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="Weather icon" width="100">
+
+            <ul>
+                <li><span class="label">Temperature:</span> <span class="value" id="temp">10 °C</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                <li><span class="label">Wind:</span> <span class="value" id="wind">5 km/h</span></li>
+                <li><span class="label">Wind Chill:</span> <span class="value" id="windchill">---</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇨🇴 Carlos Andrés Fajardo 🇨🇴 <span id="place-name">Madagascar</span> </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>
