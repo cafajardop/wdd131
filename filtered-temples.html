@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Fajardo" />
+    <meta name="description"
+        content="Temple Album showcases temples from around the world, celebrating their beauty through a clean, responsive gallery.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <title>Filtered Temples</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="logo">Temple Album</h1>
+
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="siteNav"
+            aria-label="Abrir menú">☰</button>
+
+        <nav id="siteNav" class="nav visible">
+            <button class="menu-close" aria-label="Cerrar menú">✕</button>
+            <ul class="nav-list">
+                <li><a class="nav-link active" data-filter="home" href="#">Home</a></li>
+                <li><a class="nav-link" data-filter="old" href="#">Old</a></li>
+                <li><a class="nav-link" data-filter="new" href="#">New</a></li>
+                <li><a class="nav-link" data-filter="large" href="#">Large</a></li>
+                <li><a class="nav-link" data-filter="small" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <section class="gallery" id="temples"></section>
+    </main>
+
+
+    <footer>
+        <p>©<span id="current-year"></span> 🇨🇴 Carlos Andres Fajardo Pedraza 🇨🇴 Colombia</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
