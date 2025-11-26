@@ -30,14 +30,6 @@ function populateProductSelect() {
   const select = document.querySelector('#productName');
   if (!select) return;
 
-
-  const placeholder = document.createElement('option');
-  placeholder.textContent = 'Select a Product...';
-  placeholder.value = '';
-  placeholder.disabled = true;
-  placeholder.selected = true;
-  select.appendChild(placeholder);
-
   products.forEach((product) => {
     const option = document.createElement('option');
     option.textContent = product.name;
