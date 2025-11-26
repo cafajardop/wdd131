@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Site Plan - Dulce Aroma Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <div class="logo-icon">DA</div>
+      <div class="logo-text">
+        <span class="site-name">Dulce Aroma Bakery</span>
+        <span class="site-tagline">Fresh Bread • Local Flavor</span>
+      </div>
+    </div>
+    <p class="doc-label">Website Planning Document · WDD 131</p>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h1>Website Plan: Dulce Aroma Bakery</h1>
+      <h2>Site Name</h2>
+      <p><strong>Proposed Site Name:</strong> Dulce Aroma Bakery</p>
+      <p>The name “Dulce Aroma Bakery” reflects the warm, inviting feeling of a local shop where fresh bread and pastries are baked daily.</p>
+      <p><strong>Optional domain:</strong> dulcearoma-bakery.com</p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The purpose of the Dulce Aroma Bakery website is to introduce visitors to the bakery, display its products, and provide essential information such as hours and location.</p>
+      <ul>
+        <li>Showcase bread, pastries, and seasonal baked goods.</li>
+        <li>Present the bakery’s story.</li>
+        <li>Provide a photo gallery.</li>
+        <li>Show hours, address, and a simple contact form.</li>
+        <li>Use semantic HTML, responsive CSS, and JavaScript.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>Target Audience Scenarios</h2>
+      <ul>
+        <li><strong>Scenario 1:</strong> “What types of bread and pastries does this bakery offer?”</li>
+        <li><strong>Scenario 2:</strong> “Where is the bakery located and what are the operating hours?”</li>
+        <li><strong>Scenario 3:</strong> “Can I view images of the products before visiting?”</li>
+      </ul>
+    </section>
+
+    <section id="color-schema">
+      <h2>Color Scheme</h2>
+      <p>The color palette is inspired by artisan bakery tones: dark wood, warm cream, and golden accents.</p>
+
+      <div class="color-grid">
+        <article class="color-card">
+          <div class="color-swatch primary"></div>
+          <h3>Primary Color</h3>
+          <p><strong>Hex:</strong> #7A1E1E</p>
+          <p><strong>Usage:</strong> Headings, header, primary buttons.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="color-swatch secondary"></div>
+          <h3>Secondary Color</h3>
+          <p><strong>Hex:</strong> #C8A36A</p>
+          <p><strong>Usage:</strong> Highlights, borders, accents.</p>
+        </article>
+
+        <article class="color-card">
+          <div class="color-swatch neutral"></div>
+          <h3>Neutral Background</h3>
+          <p><strong>Hex:</strong> #F6E9D7</p>
+          <p><strong>Usage:</strong> Page backgrounds and section cards.</p>
+        </article>
+      </div>
+
+      <p class="note">This document uses the defined color palette.</p>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>The site uses a classic display font for headings and a clean sans-serif for body text.</p>
+
+      <table class="typography-table">
+        <thead>
+          <tr>
+            <th>Font</th>
+            <th>Usage</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Playfair Display</strong></td>
+            <td>Headings</td>
+            <td class="example-heading">Sample Heading – Dulce Aroma Bakery</td>
+          </tr>
+          <tr>
+            <td><strong>Inter</strong></td>
+            <td>Body text</td>
+            <td class="example-body">Sample body text used across paragraphs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="wireframes">
+      <h2>Homepage Wireframes</h2>
+
+      <figure class="wireframe-figure">
+        <figcaption>Mobile Wireframe</figcaption>
+        <img src="images/wireframe-home-mobile.jpg" alt="Mobile homepage wireframe sketch">
+        <ul class="wireframe-notes">
+          <li>Header with logo and menu.</li>
+          <li>Hero image with welcome text.</li>
+          <li>Vertical product cards.</li>
+          <li>Gallery preview.</li>
+          <li>Hours and location.</li>
+        </ul>
+      </figure>
+
+      <figure class="wireframe-figure">
+        <figcaption>Desktop Wireframe</figcaption>
+        <img src="images/wireframe-home-desktop.jpg" alt="Desktop homepage wireframe sketch">
+        <ul class="wireframe-notes">
+          <li>Header with navigation.</li>
+          <li>Wide hero banner.</li>
+          <li>Three-column product grid.</li>
+          <li>Gallery section.</li>
+          <li>Split contact section.</li>
+        </ul>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dulce Aroma Bakery · WDD 131 Site Plan</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

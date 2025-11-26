@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Carlos Fajardo" />
+    <meta name="description"
+        content="Review submission confirmation page for the WDD 131 Product Review Form. Displays the review counter stored in localStorage." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <script src="scripts/main.js" defer></script>
+
+    <title>Review Submitted</title>
+</head>
+
+<body>
+    <header>
+        <h1>Thanks for your review!</h1>
+    </header>
+
+    <main>
+        <p>Your product review has been submitted successfully.</p>
+
+        <p>
+            Total reviews submitted from this browser:
+            <strong id="review-count">0</strong>
+        </p>
+
+        <p><a href="form.html">Submit another review</a></p>
+    </main>
+
+    <footer>
+        <p>©<span id="current-year"></span> 🇨🇴 Carlos Andres Fajardo Pedraza 🇨🇴 Colombia</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>
