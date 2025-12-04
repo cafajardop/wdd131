@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact · Dulce Aroma Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos Fajardo">
+  <meta name="description"
+    content="Contact Dulce Aroma Bakery for custom orders, questions, or bakery details. Includes hours, location, and a contact form.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body data-page="contact">
+  <header class="site-header">
+    <div class="brand">
+      <a class="brand-mark" href="index.html">DA</a>
+      <div class="brand-text">
+        <span class="brand-name">Dulce Aroma Bakery</span>
+        <span class="brand-tagline">Fresh bread baked daily</span>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      ☰
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h1 id="contact-heading">Contact us</h1>
+        <p>Send us a message about custom orders or questions.</p>
+      </div>
+
+      <div class="two-column">
+        <form class="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send message</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Visit the bakery</h2>
+          <p>Calle 8h # 166 - 65 Bakery Street<br>Bogotá Colombia </p>
+          <p>Phone: (57) 3002321032</p>
+          <p>Mon–Fri: 7:00 AM – 6:00 PM<br>Sat: 8:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Dulce Aroma Bakery</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

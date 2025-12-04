@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dulce Aroma Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos Fajardo">
+  <meta name="description"
+    content="Dulce Aroma Bakery – warm bread, pastries, and sweet treats baked fresh every morning. Discover our featured items, gallery, and location.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body data-page="home">
+  <header class="site-header">
+    <div class="brand">
+      <a class="brand-mark" href="index.html">DA</a>
+      <div class="brand-text">
+        <span class="brand-name">Dulce Aroma Bakery</span>
+        <span class="brand-tagline">Fresh bread baked daily</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Warm bread, local flavor</h1>
+        <p>Handcrafted loaves, pastries, and sweet treats baked every morning in your neighborhood.</p>
+        <a href="products.html" class="btn-primary">View today’s selection</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-bread.jpg" alt="Fresh bread on a wooden board">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="section-header">
+        <h2 id="featured-heading">Featured favorites</h2>
+        <p>A quick look at some of our most-loved baked goods.</p>
+      </div>
+      <div class="card-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="gallery-heading">
+      <div class="section-header">
+        <h2 id="gallery-heading">From the oven to your table</h2>
+        <p>See what is coming out of the oven today.</p>
+      </div>
+      <div class="gallery-row">
+        <img src="images/gallery-1.jpg" alt="Assorted pastries on a tray">
+        <img src="images/gallery-2.jpg" alt="Loaves of artisan bread">
+        <img src="images/gallery-3.jpg" alt="Cakes and sweet desserts">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hours-heading">
+      <div class="section-header">
+        <h2 id="hours-heading">Hours and location</h2>
+      </div>
+      <div class="info-grid">
+        <div>
+          <h3>Visit us</h3>
+          <p>123 Bakery Street<br>Sweet Town, ST 12345</p>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <p>
+            Mon–Fri: 7:00 AM – 6:00 PM<br>
+            Sat: 8:00 AM – 4:00 PM<br>
+            Sun: Closed
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Dulce Aroma Bakery</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
